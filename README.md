@@ -1,6 +1,8 @@
 # IQueue
 Service for online entries to the queue. The project consists of three main parts: a web server, a web site, and an Android application.
 
+![img](https://static.vecteezy.com/system/resources/previews/000/363/832/non_2x/vector-people-queuing-up-in-a-long-queue-line.jpg)
+
 ## Android
 In the Android app, you can choose the company and branch that you want to join in the online queue. You can also manage your records, delete them, or change them.
 
