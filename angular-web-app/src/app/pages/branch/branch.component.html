@@ -1,0 +1,18 @@
+<nb-card style="text-align: center;">
+  <nb-card-body style="text-align: center;">
+    <h1 id="title" class="title">Active notes in {{name}}</h1>
+    <table width="100%" style="margin-top: 30px;">
+        <tr style="border-bottom: 1px solid #aaa; height: 40px;">
+            <td>User name</td>
+            <td>Recording time</td>
+            <td>Done</td>
+        </tr>
+        <tr *ngFor="let note of notes" style="height: 35px;">
+            <td>{{note['userName']}}</td>  
+            <td>{{note['recordingTime']}}</td>
+            <td (click)=Done(note) *ngIf="note===notes[0]" style="cursor: pointer;"><img src="../../../assets/images/done-all-outline.png" alt="Done" height="25px"></td>
+        </tr>
+    </table>
+  </nb-card-body>
+</nb-card>
+

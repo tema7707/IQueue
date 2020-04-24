@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="apshirokov.cs.hse.iqueue.MainViewer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorMyBlack"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/titleLogo"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:background="@color/colorMyBlack"
+            android:fontFamily="@font/segoe_ui"
+            android:gravity="center_vertical"
+            android:text="My Notes"
+            android:textAlignment="center"
+            android:textColor="@color/colorMyWhite"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorMyWhite" />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/colorMyBlack"
+        app:itemIconTint="@color/colorMyWhite"
+        app:itemTextColor="@color/colorMyWhite"
+        app:menu="@menu/navigation" />
+
+</LinearLayout>

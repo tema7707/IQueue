@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <!-- Map Fragment embedded with the map object -->
+                <fragment
+                    class="com.here.android.mpa.mapping.SupportMapFragment"
+                    android:id="@+id/branchMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="162dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="157dp"
+                        android:layout_height="43dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/point" />
+
+                    <TextView
+                        android:id="@+id/branchFragmentAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/segoe_ui"
+                        android:gravity="center_vertical"
+                        android:text="420 Something ST"
+                        android:textColor="@color/colorMyWhite"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="157dp"
+                        android:layout_height="43dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/distance" />
+
+                    <TextView
+                        android:id="@+id/branchFragmentDist"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/segoe_ui"
+                        android:gravity="center_vertical"
+                        android:text="1.5 km"
+                        android:textColor="@color/colorMyWhite"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="157dp"
+                        android:layout_height="43dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/stopwatch" />
+
+                    <TextView
+                        android:id="@+id/branchFragmentTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/segoe_ui"
+                        android:gravity="center_vertical"
+                        android:text="10 min"
+                        android:textColor="@color/colorMyWhite"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#2A2F37"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp">
+
+                    <ImageView
+                        android:layout_width="157dp"
+                        android:layout_height="43dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/bottomarrow" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/segoe_ui"
+                        android:gravity="center_vertical"
+                        android:text="More Information"
+                        android:textColor="@color/colorMyWhite"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/colorMyBlack"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteY="389dp">
+
+            <Button
+                android:id="@+id/getIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/form_getin"
+                android:text="Get In"
+                android:textAllCaps="false"
+                android:textColor="@color/colorMyBlack"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

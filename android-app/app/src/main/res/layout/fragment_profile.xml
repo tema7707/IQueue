@@ -1,0 +1,109 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:id="@+id/fl_home"
+tools:context="apshirokov.cs.hse.iqueue.MyNotesFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/full_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorMyDarkWhite"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp"
+                android:text="City"
+                android:textColor="@color/colorMyDarkWhite" />
+
+            <TextView
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:textColor="@color/colorMyWhite"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp"
+                android:text="Age"
+                android:textColor="@color/colorMyDarkWhite" />
+
+            <TextView
+                android:id="@+id/age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:textColor="@color/colorMyWhite"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp"
+                android:text="Sex"
+                android:textColor="@color/colorMyDarkWhite" />
+
+            <TextView
+                android:id="@+id/sex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:textColor="@color/colorMyWhite"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp"
+                android:text="Email"
+                android:textColor="@color/colorMyDarkWhite" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:textColor="@color/colorMyWhite"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button_sign_out"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorAccent"
+                android:text="Sign out"
+                android:textColor="@android:color/background_light" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

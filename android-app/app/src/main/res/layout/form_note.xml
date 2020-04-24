@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/noteForm"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:background="@color/colorPrimaryDark"
+    android:paddingLeft="31dp"
+    android:paddingRight="31dp"
+    android:paddingBottom="17dp"
+    tools:layout_editor_absoluteY="25dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="31dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="@drawable/form_background"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/noteLogo"
+                    android:layout_width="47dp"
+                    android:layout_height="47dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="22dp" />
+
+                <LinearLayout
+                    android:layout_width="209dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/noteCompanyName"
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:layout_marginBottom="-5dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/segoe_ui"
+                        android:gravity="center_vertical"
+                        android:text="Sberbank"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="26sp" />
+
+                    <TextView
+                        android:id="@+id/noteAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="18dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/segoe_ui"
+                        android:text="420 Something ST"
+                        android:textColor="@color/colorMyDarkWhite"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="16dp">
+
+                <TextView
+                    android:id="@+id/noteDay"
+                    android:layout_width="47dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/segoe_ui"
+                    android:text="1 June"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorMyDarkWhite" />
+
+                <TextView
+                    android:id="@+id/noteTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="16dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/segoe_ui"
+                    android:gravity="bottom"
+                    android:text="8:00 AM"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="28sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/noteButtonsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="-10dp"
+            android:orientation="horizontal"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="31dp">
+
+            <Button
+                android:id="@+id/button_edit"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/form_button_edit"
+                android:fontFamily="@font/segoe_ui"
+                android:text="EDIT"
+                android:textColor="@android:color/background_light"
+                android:visibility="visible" />
+
+
+            <Button
+                android:id="@+id/button_info"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorMyWhite"
+                android:fontFamily="@font/segoe_ui"
+                android:text="INFO"
+                android:textColor="#6D6D6D"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/button_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/form_button_delete"
+                android:fontFamily="@font/segoe_ui"
+                android:text="DELETE"
+                android:textColor="@android:color/background_light"
+                android:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

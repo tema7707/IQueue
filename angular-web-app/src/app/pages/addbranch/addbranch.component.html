@@ -1,0 +1,75 @@
+
+
+<nb-card style="text-align: center;">
+    <nb-card-body>
+
+<h1 id="title" class="title">Branch Creating</h1>
+
+<nb-alert *ngIf="_error" outline="danger" role="alert">
+  <p class="alert-title"><b>Error!!</b></p>
+</nb-alert>
+
+<nb-alert *ngIf="_success" outline="success" role="alert">
+  <p class="alert-title"><b>Success!</b></p>
+</nb-alert>
+
+<form #form="ngForm" aria-labelledby="title">
+
+  <div class="form-control-group">
+    <input type="text" nbInput
+        style="
+            height: 33px;
+            padding: 7px;
+            border-radius: 5px;
+            width: 100%;
+            max-width: 400px;
+            margin: 20px;"
+        autofocus
+        name="branch"
+        [(ngModel)]="branch"
+        placeholder="Address">
+  </div>
+
+  <div class="form-control-group">
+    <input type="text" nbInput
+        style="
+            height: 33px;
+            padding: 7px;
+            border-radius: 5px;
+            width: 50%;
+            max-width: 190px;
+            margin: 20px;
+            margin-right: 10px;"
+        autofocus
+        name="longitude"
+        [(ngModel)]="longitude"
+        placeholder="Longitude">
+
+    <input type="text" nbInput
+        style="
+            height: 33px;
+            padding: 7px;
+            border-radius: 5px;
+            width: 50%;
+            max-width: 190px;
+            margin: 20px;
+            margin-left: 10px;"
+        autofocus
+        name="latitude"
+        [(ngModel)]="latitude"
+        placeholder="Latitude">
+  </div>
+
+  <button nbButton
+          fullWidth
+          (click)="add(form)"
+          style="max-width: 400px;"
+          status="success"
+          [disabled]="submitted || !form.valid"
+          [class.btn-pulse]="submitted">
+    Create New
+  </button>
+</form>
+</nb-card-body>
+</nb-card>
+
